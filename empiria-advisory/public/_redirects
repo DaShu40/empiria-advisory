@@ -1,0 +1,7 @@
+# URL shortcuts
+/home /
+/about-us /about
+
+# Cloudflare Pages: custom 404
+/404 /404.html 404
+/* /404.html 404

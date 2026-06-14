@@ -1,0 +1,307 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const services = [
+  {
+    id: 'ai-governance',
+    num: '01',
+    title: 'Artificial Intelligence Governance',
+    tagline: 'From risk classification to governance architecture',
+    description: 'AI systems face concurrent regulation across the EU AI Act, China\'s CAC algorithmic and generative AI regulations, and Singapore\'s voluntary AI governance frameworks. EMPIRIA designs compliance frameworks that address overlapping obligations without duplicating effort.',
+    scope: [
+      'AI system risk classification under EU AI Act (prohibited, high-risk, limited, minimal)',
+      'Governance model design: accountability structures, documentation requirements, human oversight',
+      'CAC algorithm transparency and security assessment support',
+      'Generative AI compliance under China\'s 2023 Interim Measures',
+      'Board-level AI governance policy drafting',
+      'AI risk register design and implementation',
+    ],
+    deliverables: ['AI Risk Classification Report', 'AI Governance Framework Document', 'Regulatory Gap Analysis', 'Policy and Procedure Suite'],
+    jurisdictions: ['EU / Ireland', 'China', 'Singapore'],
+  },
+  {
+    id: 'data-privacy',
+    num: '02',
+    title: 'Data Governance & Privacy',
+    tagline: 'GDPR, PIPL, and cross-border data strategy',
+    description: 'Data governance obligations under GDPR and China\'s PIPL create a complex dual-track compliance environment for organisations with EU and Chinese operations. Our approach begins with comparative obligation mapping and produces production-ready documentation architecture.',
+    scope: [
+      'GDPR compliance architecture: legal basis analysis, ROPA, privacy notices, DPIA programmes',
+      'PIPL compliance: consent mechanisms, cross-border transfer standard contracts, important data management',
+      'Cross-border data transfer solutions: SCCs, BCRs, Chinese CAC-approved mechanisms',
+      'DPA engagement strategy and enforcement risk assessment',
+      'Privacy-by-design integration into product and technical processes',
+      'Data subject rights fulfilment process design',
+    ],
+    deliverables: ['Privacy Notice Architecture', 'Cross-Border Transfer Analysis', 'ROPA Documentation', 'DPIA Template and Process', 'DPA Engagement Strategy'],
+    jurisdictions: ['EU / Ireland', 'China', 'Singapore'],
+  },
+  {
+    id: 'comparative-governance',
+    num: '03',
+    title: 'Comparative Digital Governance',
+    tagline: 'Multi-jurisdiction clarity for strategic decisions',
+    description: 'For organisations navigating regulatory obligations across two or more jurisdictions, a siloed approach to compliance creates duplication, contradiction, and strategic blindness. Comparative governance analysis identifies where obligations align, where they conflict, and where strategic design choices can resolve both simultaneously.',
+    scope: [
+      'Regulatory obligation mapping across EU, China, and ASEAN jurisdictions',
+      'Conflict identification: where GDPR and PIPL obligations directly contradict',
+      'Strategic alignment opportunities: compliance approaches that satisfy multiple frameworks',
+      'EU–China regulatory trajectory analysis for multi-year planning',
+      'ASEAN emerging regulation monitoring and impact assessment',
+      'Geopolitical regulatory risk analysis for technology operations',
+    ],
+    deliverables: ['Multi-Jurisdiction Regulatory Map', 'Conflict and Alignment Analysis', 'Strategic Compliance Roadmap', 'Executive Policy Brief'],
+    jurisdictions: ['EU / Ireland', 'China', 'Singapore', 'ASEAN'],
+  },
+  {
+    id: 'digital-infrastructure',
+    num: '04',
+    title: 'Digital Infrastructure Policy',
+    tagline: 'Cloud, CDN, and data sovereignty compliance',
+    description: 'Data sovereignty requirements in China (DSL, MLPS), EU data localisation trends, and sector-specific infrastructure requirements create significant operational constraints for cloud-dependent organisations. We assess compliance obligations and design infrastructure strategies that satisfy regulatory requirements without unnecessary operational burden.',
+    scope: [
+      'Data localisation obligation analysis under DSL and MLPS 2.0',
+      'Cloud architecture review against Chinese regulatory requirements',
+      'CDN compliance assessment for content delivery in China',
+      'EU data residency requirements under sector-specific regulation',
+      'Critical information infrastructure (CII) designation risk assessment',
+      'Infrastructure compliance roadmap and vendor guidance',
+    ],
+    deliverables: ['Infrastructure Compliance Audit', 'Data Sovereignty Risk Assessment', 'Cloud Localisation Roadmap', 'Vendor Compliance Guidance'],
+    jurisdictions: ['China', 'EU'],
+  },
+  {
+    id: 'china-execution',
+    num: '05',
+    title: 'China Compliance Execution',
+    tagline: 'End-to-end implementation in a complex environment',
+    description: 'Advisory on China\'s regulatory requirements is widely available. What organisations actually need is structured implementation support that turns regulatory obligations into operational realities — filing the right documents, building the right processes, and validating the outcome. EMPIRIA delivers the full execution cycle.',
+    scope: [
+      'PIPL compliance programme design and implementation',
+      'DSL compliance assessment and security management programme',
+      'CAC filing support: algorithm filing, security assessment coordination',
+      'MLPS 2.0 security classification and compliance implementation',
+      'Generative AI service filing and compliance programme',
+      'Ongoing regulatory monitoring and compliance maintenance',
+    ],
+    deliverables: ['Full Compliance Process Documentation', 'Filing Support', 'Staff Training Materials', 'Operational Readiness Validation Report'],
+    jurisdictions: ['China'],
+  },
+  {
+    id: 'economic-security',
+    num: '06',
+    title: 'Economic Security & Tech Policy',
+    tagline: 'Regulatory forecasting for strategic planning',
+    description: 'Digital regulation is increasingly shaped by geopolitical competition. Export controls, technology standard-setting battles, investment screening, and supply chain security requirements all create regulatory exposure for technology companies. EMPIRIA maps these risks and provides forward-looking analysis for strategic planning.',
+    scope: [
+      'Supply chain regulatory risk assessment (US BIS, EU, China SAMR)',
+      'Technology export control compliance framework',
+      'Geopolitical scenario analysis for technology operations',
+      'Standard-setting strategy: ISO, ITU, IEEE, ETSI regulatory dynamics',
+      'Digital infrastructure foreign investment screening analysis',
+      'Regulatory forecasting: 12–36 month trajectory analysis',
+    ],
+    deliverables: ['Supply Chain Risk Report', 'Geopolitical Scenario Analysis', 'Regulatory Forecast Brief', 'Strategic Options Paper'],
+    jurisdictions: ['EU', 'China', 'US'],
+  },
+];
+---
+
+<Layout
+  title="Services — EMPIRIA Advisory"
+  description="EMPIRIA Advisory's six practice areas: AI Governance, Data Privacy, Comparative Digital Governance, Digital Infrastructure Policy, China Compliance Execution, and Economic Security & Tech Policy."
+>
+
+<header id="header">
+  <div class="header-inner">
+    <a href="/" class="logo" aria-label="EMPIRIA Advisory home">
+      <span class="logo-mark">E</span>
+      <span class="logo-text">EMPIRIA <em>Advisory</em></span>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="/about">About</a></li>
+        <li><a href="/#governance">Governance</a></li>
+        <li><a href="/#research">Research</a></li>
+        <li><a href="/#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="/#contact" class="btn-cta">Schedule a Consultation</a>
+  </div>
+</header>
+
+<main>
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Practice Areas</p>
+      <h1>Deliverable-Oriented Advisory<br/>Across <em>Six Domains</em></h1>
+      <p class="hero-sub">Every engagement produces documented, actionable outputs — not advisory decks. Below is the scope and deliverable set for each practice area.</p>
+    </div>
+  </section>
+
+  <!-- SERVICE INDEX (sticky sidebar pattern) -->
+  <div class="services-layout">
+    <aside class="services-nav" aria-label="Service navigation">
+      <ul>
+        {services.map(s => (
+          <li>
+            <a href={`#${s.id}`}>
+              <span class="nav-num">{s.num}</span>
+              <span>{s.title}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </aside>
+    <div class="services-content">
+      {services.map(s => (
+        <article id={s.id} class="service-detail">
+          <div class="sd-header">
+            <span class="sd-num">{s.num}</span>
+            <div>
+              <h2>{s.title}</h2>
+              <p class="sd-tagline">{s.tagline}</p>
+            </div>
+            <div class="sd-jurisdictions">
+              {s.jurisdictions.map(j => <span class="jur-tag">{j}</span>)}
+            </div>
+          </div>
+          <p class="sd-description">{s.description}</p>
+          <div class="sd-body">
+            <div class="sd-scope">
+              <p class="block-label">Scope</p>
+              <ul>
+                {s.scope.map(item => <li>{item}</li>)}
+              </ul>
+            </div>
+            <div class="sd-deliverables">
+              <p class="block-label">Deliverables</p>
+              <ul class="deliverable-chips">
+                {s.deliverables.map(d => <li>{d}</li>)}
+              </ul>
+              <a href="/#contact" class="engage-link">Engage on this area →</a>
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <section class="svc-cta">
+    <div class="container">
+      <h2>Not Sure Where to Start?</h2>
+      <p>Many organisations begin with a regulatory mapping exercise to understand their exposure across jurisdictions. Get in touch to discuss a scoping conversation.</p>
+      <a href="mailto:advisor@empiriadvisory.com" class="btn-primary">advisor@empiriadvisory.com</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <p>© 2025 EMPIRIA Advisory</p>
+    <div class="footer-links">
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/privacy">Privacy</a>
+    </div>
+  </div>
+</footer>
+
+</Layout>
+
+<style>
+:root {
+  --slate-900: #0B0F19;
+  --slate-800: #111827;
+  --slate-700: #1E2A3A;
+  --accent: #4A7FCC;
+  --off-white: #F0EDE6;
+  --muted: #7A8EA8;
+  --border: rgba(74, 127, 204, 0.15);
+  --border-strong: rgba(74, 127, 204, 0.3);
+}
+.container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+
+#header { position: sticky; top: 0; z-index: 100; background: rgba(11,15,25,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+.header-inner { max-width: 1200px; margin: 0 auto; padding: 0 2rem; height: 64px; display: flex; align-items: center; gap: 2rem; }
+.logo { display: flex; align-items: center; gap: 0.625rem; text-decoration: none; }
+.logo-mark { width: 28px; height: 28px; background: var(--accent); color: white; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; border-radius: 2px; }
+.logo-text { font-size: 0.9375rem; font-weight: 600; color: var(--off-white); letter-spacing: 0.05em; text-transform: uppercase; }
+.logo-text em { font-style: normal; font-weight: 300; color: var(--muted); }
+nav { flex: 1; display: flex; justify-content: center; }
+nav ul { display: flex; gap: 2rem; list-style: none; padding: 0; margin: 0; }
+nav a { font-size: 0.8125rem; color: var(--muted); text-decoration: none; transition: color 0.2s; }
+nav a:hover { color: var(--off-white); }
+.btn-cta { display: inline-block; background: var(--accent); color: white; padding: 0.5rem 1.25rem; font-size: 0.8125rem; font-weight: 500; text-decoration: none; border-radius: 2px; }
+.btn-cta:hover { background: #3a6ab5; }
+
+.page-hero { padding: 7rem 0 4rem; border-bottom: 1px solid var(--border); }
+.eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); margin-bottom: 1.25rem; display: block; }
+h1 { font-family: 'Playfair Display', serif; font-size: clamp(2.25rem, 4vw, 3.75rem); font-weight: 500; line-height: 1.1; color: var(--off-white); margin-bottom: 1.25rem; }
+h1 em { font-style: italic; color: var(--accent); }
+.hero-sub { font-size: 1rem; color: var(--muted); line-height: 1.7; max-width: 560px; }
+
+/* LAYOUT */
+.services-layout { display: grid; grid-template-columns: 220px 1fr; max-width: 1200px; margin: 0 auto; padding: 0 2rem; gap: 4rem; }
+
+/* SIDEBAR */
+.services-nav { padding-top: 3rem; }
+.services-nav ul { list-style: none; padding: 0; margin: 0; position: sticky; top: 80px; }
+.services-nav li { border-bottom: 1px solid var(--border); }
+.services-nav a { display: flex; gap: 0.75rem; align-items: baseline; padding: 0.875rem 0; text-decoration: none; color: var(--muted); font-size: 0.8125rem; line-height: 1.4; transition: color 0.2s; }
+.services-nav a:hover { color: var(--off-white); }
+.nav-num { font-family: 'JetBrains Mono', monospace; font-size: 0.625rem; color: var(--accent); letter-spacing: 0.1em; flex-shrink: 0; }
+
+/* SERVICE DETAIL */
+.services-content { padding: 3rem 0 5rem; }
+.service-detail { padding: 4rem 0; border-bottom: 1px solid var(--border); }
+.service-detail:first-child { padding-top: 3rem; }
+.service-detail:last-child { border-bottom: none; }
+
+.sd-header { display: flex; gap: 1.5rem; align-items: flex-start; margin-bottom: 1.5rem; flex-wrap: wrap; }
+.sd-num { font-family: 'JetBrains Mono', monospace; font-size: 0.6875rem; color: var(--accent); letter-spacing: 0.15em; padding-top: 6px; flex-shrink: 0; }
+h2 { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 500; color: var(--off-white); margin-bottom: 0.25rem; }
+.sd-tagline { font-size: 0.875rem; color: var(--accent); font-style: italic; }
+
+.sd-jurisdictions { margin-left: auto; display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.jur-tag { font-family: 'JetBrains Mono', monospace; font-size: 0.5625rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); border: 1px solid var(--border); padding: 2px 7px; border-radius: 2px; white-space: nowrap; }
+
+.sd-description { font-size: 0.9375rem; color: var(--muted); line-height: 1.75; margin-bottom: 2rem; max-width: 640px; }
+
+.sd-body { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+.block-label { font-family: 'JetBrains Mono', monospace; font-size: 0.625rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); margin-bottom: 1rem; display: block; }
+
+.sd-scope ul { list-style: none; padding: 0; margin: 0; }
+.sd-scope li { font-size: 0.875rem; color: var(--muted); padding: 0.4rem 0 0.4rem 1rem; border-bottom: 1px solid var(--border); position: relative; line-height: 1.5; }
+.sd-scope li::before { content: '→'; position: absolute; left: 0; color: var(--accent); font-size: 0.75rem; }
+
+.deliverable-chips { list-style: none; padding: 0; margin: 0 0 1.5rem; display: flex; flex-direction: column; gap: 0.5rem; }
+.deliverable-chips li { font-size: 0.8125rem; color: var(--off-white); padding: 0.5rem 0.875rem; background: rgba(74,127,204,0.08); border: 1px solid var(--border-strong); border-radius: 2px; }
+
+.engage-link { font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: var(--accent); text-decoration: none; letter-spacing: 0.04em; display: inline-block; margin-top: 0.5rem; }
+.engage-link:hover { text-decoration: underline; }
+
+/* CTA */
+.svc-cta { background: var(--slate-800); border-top: 1px solid var(--border); padding: 5rem 0; text-align: center; }
+.svc-cta h2 { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 500; color: var(--off-white); margin-bottom: 1rem; }
+.svc-cta p { font-size: 0.9375rem; color: var(--muted); max-width: 480px; margin: 0 auto 2rem; line-height: 1.7; }
+.btn-primary { display: inline-block; background: var(--accent); color: white; padding: 0.875rem 2rem; font-size: 0.875rem; font-weight: 500; text-decoration: none; border-radius: 2px; transition: background 0.2s; font-family: 'JetBrains Mono', monospace; letter-spacing: 0.04em; }
+.btn-primary:hover { background: #3a6ab5; }
+
+footer { background: var(--slate-800); border-top: 1px solid var(--border); padding: 2rem 0; }
+.footer-inner { display: flex; justify-content: space-between; align-items: center; }
+footer p { font-size: 0.8125rem; color: var(--muted); margin: 0; }
+.footer-links { display: flex; gap: 1.5rem; }
+.footer-links a { font-size: 0.8125rem; color: var(--muted); text-decoration: none; }
+.footer-links a:hover { color: var(--off-white); }
+
+@media (max-width: 900px) {
+  .services-layout { grid-template-columns: 1fr; gap: 0; }
+  .services-nav { display: none; }
+  .sd-body { grid-template-columns: 1fr; }
+  .sd-jurisdictions { margin-left: 0; }
+  nav { display: none; }
+}
+</style>

@@ -1,0 +1,12 @@
+# Cloudflare Pages + Workers configuration
+# https://developers.cloudflare.com/pages/
+
+name = "empiria-advisory"
+compatibility_date = "2025-06-01"
+
+# Pages project — build output served from /dist
+pages_build_output_dir = "dist"
+
+# Optional: bind a custom domain
+# [env.production.vars]
+# SITE_URL = "https://empiriadvisory.com"
