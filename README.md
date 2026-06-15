@@ -2,7 +2,7 @@
 
 Static marketing site for EMPIRIA Advisory, built with **Astro** and deployed to **Cloudflare Pages**.
 
-## Stack
+## Stack -
 
 | Layer | Choice |
 |---|---|
