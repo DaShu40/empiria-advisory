@@ -29,7 +29,7 @@ npm run build
 ```
 
 ## Deploy to Cloudflare Pages
-
+deployment refresh
 ### Option A — GitHub Actions (recommended)
 
 1. Push this repo to GitHub
