@@ -2,16 +2,34 @@
 
 @layer base {
   :root {
-    --slate-900: #0B0F19;
-    --slate-800: #111827;
-    --slate-700: #1E2A3A;
-    --ink-blue: #1B3A6B;
-    --ink-blue-light: #2A5298;
-    --accent: #4A7FCC;
-    --accent-warm: #C8A96E;
-    --off-white: #F0EDE6;
-    --muted: #8899AA;
-    --border: #1E2A3A;
+    /* Backgrounds */
+    --bg-white: #FBFBFD;
+    --bg-black: #000000;
+    --bg-dark: #1D1D1F;
+    --bg-card-light: #FFFFFF;
+    --bg-card-dark: #1D1D1F;
+
+    /* Text */
+    --text-primary-light: #1D1D1F;
+    --text-secondary-light: #6E6E73;
+    --text-primary-dark: #F5F5F7;
+    --text-secondary-dark: #A1A1A6;
+
+    /* Accent */
+    --accent: #0066CC;
+    --accent-hover: #0077ED;
+
+    /* Borders */
+    --border-light: #D2D2D7;
+    --border-dark: #333336;
+
+    /* Typography */
+    --font-display: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif;
+    --font-body: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+
+    /* Content width */
+    --content-width: 980px;
+    --content-wide: 1200px;
   }
 
   html {
@@ -19,14 +37,15 @@
   }
 
   body {
-    background-color: var(--slate-900);
-    color: var(--off-white);
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: var(--bg-white);
+    color: var(--text-primary-light);
+    font-family: var(--font-body);
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
-  h1, h2, h3, h4 {
-    font-family: 'Playfair Display', Georgia, serif;
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
   }
 
   ::selection {
